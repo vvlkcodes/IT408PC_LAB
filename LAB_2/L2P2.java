@@ -15,6 +15,13 @@ public class L2P2{
 		for(int element : arr){
 			System.out.println("Is "+element+" a prime number? "+isPrime(element));
 		}	
+
+		int c = 0;
+		for(int element : arr){
+			if(isPrime(element)) c++;
+		}	
+		System.out.println("The total number of prime numbers in the given array are: "+c);
+
 	}
 
 	public static boolean isPrime(int n){
