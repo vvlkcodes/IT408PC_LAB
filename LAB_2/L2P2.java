@@ -18,8 +18,8 @@ public class L2P2{
 
 		int c = 0;
 		for(int element : arr){
-			if(isPrime(element)) c++;
-		}	
+			if(isPrime(element) && element != 1) c++;
+		}
 		System.out.println("The total number of prime numbers in the given array are: "+c);
 
 	}
